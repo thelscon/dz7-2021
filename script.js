@@ -193,4 +193,4 @@ function createCharacter () {
 
 const newCharacter = createCharacter() ;
 
-console.dir( newCharacter ) ;
+console.log( newCharacter ) ;
