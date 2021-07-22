@@ -130,14 +130,14 @@ const objectSimpleRace = {
             if( this.race[ key ].number === value || this.race[ key ].name === value ) {
                 if( Array.isArray( this.race[ key ].alliance ) ) {
                     return {
-                        'раса персонажа' : this.race[ key ].name ,
-                        'альянс персонажа' : this.findAlliance( this.race[ key ].alliance )
+                        race : this.race[ key ].name ,
+                        alliance : this.findAlliance( this.race[ key ].alliance )
                     }
                 }
                 else {
                     return {
-                        'раса персонажа' : this.race[ key ].name ,
-                        'альянс персонажа' : this.race[ key ].alliance
+                        race : this.race[ key ].name ,
+                        alliance : this.race[ key ].alliance
                     }
                 }
             }
@@ -183,9 +183,9 @@ function createCharacter () {
     //-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
     return {
-        'имя персонажа' : characterName ,
-        'пол персонажа' : characterGander ,
-        'роль персонажа' : characterRole ,
+        name : characterName ,
+        gander : characterGander ,
+        role : characterRole ,
         ... characterRaceAlliance
     }
 
